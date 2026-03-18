@@ -7,7 +7,10 @@ from utils.utils import parse_bool
 class ArgParser():
     def __init__(self):
         self.parser = argparse.ArgumentParser()
-        self.user_name = os.getlogin()
+        try:
+            self.user_name = os.getlogin()
+        except OSError:
+            self.user_name = os.environ.get('USER', 'unknown')
         self.proj_name = 'UniGen'
 
         # Task arguments
