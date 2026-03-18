@@ -1,0 +1,15 @@
+{
+    "placeholders": {
+        "text": "<X>",
+        "label": "<Y>"
+    },
+    "labels": {
+        "0": "world news",
+        "1": "sports",
+        "2": "business",
+        "3": "science and technology"
+    },
+    "prompts": {
+        "instruction": "The text in <Y> category is: \"<X>\""
+    }
+}

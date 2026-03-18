@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find \"C:/Users/13070/Desktop/UCL/NLP/unigen-master/unigen-master/data\" -maxdepth 2 -type d 2>/dev/null || dir /s /b /ad \"C:\\\\Users\\\\13070\\\\Desktop\\\\UCL\\\\NLP\\\\unigen-master\\\\unigen-master\\\\data\" 2>/dev/null)",
+      "Bash(find \"C:/Users/13070/Desktop/UCL/NLP/unigen-master/unigen-master\" -type f \\\\\\( -name \"*.sh\" -o -name \"*.yaml\" -o -name \"*.yml\" -o -name \"*.json\" -o -name \"*.cfg\" -o -name \"*.conf\" \\\\\\) 2>/dev/null | grep -v node_modules)",
+      "Bash(ls -lah \"C:/Users/13070/Desktop/UCL/NLP/unigen-master/unigen-master/\" 2>/dev/null | grep -E \"\\\\.\\(py|ipynb|sh\\)$|^d\")",
+      "Bash(find \"C:/Users/13070/Desktop/UCL/NLP/unigen-master/unigen-master/task/classification/\" -type f -name \"*.py\" 2>/dev/null | head -20)",
+      "Bash(for dir:*)",
+      "Bash(do echo:*)",
+      "Read(//c/Users/13070/Desktop/UCL/NLP/unigen-master/unigen-master/data/preprocessed/UniGen/classification/**)",
+      "Bash(done)",
+      "Bash(cd \"C:/Users/13070/Desktop/UCL/NLP/unigen-master/unigen-master\" && python -c \"import pickle; print\\('pickle ok'\\)\" 2>&1; echo \"EXIT: $?\")",
+      "Bash(cd \"C:/Users/13070/Desktop/UCL/NLP/unigen-master/unigen-master\" && python -c \"\nimport pickle\npath = 'data/preprocessed/UniGen/classification/sst2/train.pkl'\nwith open\\(path,'rb'\\) as fp:\n    data = pickle.load\\(fp\\)\nprint\\(type\\(data\\)\\)\nprint\\(len\\(data\\) if hasattr\\(data,'__len__'\\) else 'no len'\\)\n\" 2>&1; echo \"EXIT: $?\")",
+      "Bash(find \"C:/Users/13070/Desktop/UCL/NLP/unigen-master/unigen-master/data/preprocessed\" -name \"*.pkl\" -maxdepth 4 2>/dev/null | head -20)",
+      "Bash(find \"C:/Users/13070/Desktop/UCL/NLP/unigen-master/unigen-master/data/preprocessed\" -name \"*.pkl\" 2>/dev/null | head -40)"
+    ]
+  }
+}
